@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agents-comm-bus-claude",
+  "description": "Universal agent communication bus for Claude Code. One plugin per supported comm (Telegram first; Matrix, Discord, Slack to follow). Each plugin bootstraps the per-user agents-comm-bus daemon and registers its comm adapter.",
+  "owner": {
+    "name": "remingtonspaz",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "agents-comm-bus-telegram",
+      "description": "Telegram messaging for Claude Code through the agents-comm-bus daemon. Send messages and attachments, receive inbound, route permission prompts and AskUserQuestion choices to inline keyboards.",
+      "version": "0.0.0",
+      "author": {
+        "name": "Satrio"
+      },
+      "source": {
+        "source": "github",
+        "repo": "remingtonspaz/agents-comm-bus",
+        "path": "plugins/claude/telegram"
+      },
+      "category": "productivity",
+      "tags": ["telegram", "messaging", "remote-control", "automation", "agents-comm-bus"],
+      "homepage": "https://github.com/remingtonspaz/agents-comm-bus"
+    }
+  ]
+}
