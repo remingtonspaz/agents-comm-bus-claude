@@ -39,20 +39,15 @@ Telegram comm adapter.
 
 ## Companion repos
 
-- **Source monorepo:** `remingtonspaz/agents-comm-bus` (presumed name
-  after the planned rename — see note below). Holds daemon source,
-  comm adapter sources, Claude host edge (`hosts/claude/`), and built
-  artifacts under `plugins/claude/<comm>/`.
+- **Source monorepo:** `remingtonspaz/agents-comm-bus`. Holds daemon
+  source, comm adapter sources, Claude host edge (`hosts/claude/`),
+  and built artifacts under `plugins/claude/<comm>/`.
 - **Codex marketplace:** `remingtonspaz/agents-comm-bus-codex`. Same
   shape as this repo, but with `.agents/plugins/marketplace.json` per
   Codex's plugin convention.
 
 ## Open scaffold notes (pre-first-push)
 
-- **Source-repo URL.** `marketplace.json` and this README reference
-  `remingtonspaz/agents-comm-bus`. As of this scaffold the source
-  monorepo on GitHub is still named `claude-code-telegram`. Update
-  both references at (or before) the rename.
 - **`source` schema.** The `source` block in `marketplace.json` uses
   `{"source": "github", "repo": "...", "path": "..."}`. Validate
   against the live Claude Code marketplace schema before publishing —
