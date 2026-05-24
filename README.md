@@ -48,16 +48,17 @@ Telegram comm adapter.
 
 ## Open scaffold notes (pre-first-push)
 
-- **`source` schema.** The `source` block in `marketplace.json` uses
-  `{"source": "github", "repo": "...", "path": "..."}`. Validate
-  against the live Claude Code marketplace schema before publishing —
-  the exact field names for git-subdir references should be checked
-  against current Claude Code marketplace docs.
 - **Pinned ref.** Once the source monorepo ships a tagged release with
-  built artifacts under `plugins/claude/telegram/`, add a `ref` (tag
-  or branch) field to the `source` block to pin the plugin version.
+  built artifacts under `plugins/claude/telegram/`, add a `ref` field
+  (branch or tag, e.g. `"ref": "v0.1.0"`) and/or `sha` (full 40-char
+  commit SHA) to each plugin's `source` block to pin the install.
 - **Version bumps.** `version` on each plugin entry must track the
-  source monorepo's release tag for that `(agent, comm)` pair.
+  source monorepo's release tag for that `(agent, comm)` pair. Note:
+  when set on a marketplace entry, this string overrides any `version`
+  declared in the plugin's own `plugin.json` at install time.
+- **Validate before push.** Run `claude plugin validate .` (or
+  `/plugin validate .` inside Claude) to catch schema errors before
+  publishing.
 
 ## Related docs (in source monorepo)
 
