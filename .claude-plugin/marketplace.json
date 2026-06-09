@@ -8,7 +8,7 @@
     {
       "name": "agents-comm-bus-telegram",
       "description": "Telegram messaging for Claude Code through the agents-comm-bus daemon. Send messages and attachments, receive inbound, route permission prompts and AskUserQuestion choices to inline keyboards.",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "author": {
         "name": "Satrio"
       },
@@ -24,7 +24,7 @@
     {
       "name": "agents-comm-bus-discord",
       "description": "Discord messaging for Claude Code through the agents-comm-bus daemon. Gateway inbound + REST outbound: send messages and attachments, receive inbound, route permission prompts and AskUserQuestion choices as text.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "Satrio"
       },
@@ -40,7 +40,7 @@
     {
       "name": "agents-comm-bus-matrix",
       "description": "Matrix messaging for Claude Code through the agents-comm-bus daemon. Client-Server /sync inbound + outbound: send messages and attachments, receive inbound, route permission prompts and AskUserQuestion choices as text.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "Satrio"
       },
